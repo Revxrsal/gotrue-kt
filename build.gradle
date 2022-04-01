@@ -1,0 +1,22 @@
+plugins {
+    id "org.jetbrains.kotlin.jvm" version "1.6.10"
+    id "org.jetbrains.kotlin.kapt" version "1.6.10"
+    id "java"
+}
+
+group = "io.supabase"
+version = "1.0"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation "com.squareup.moshi:moshi:1.13.0"
+    implementation "com.squareup.okhttp3:okhttp:5.0.0-alpha.6"
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")
+}
