@@ -23,4 +23,7 @@
  */
 package io.supabase.gotrue
 
+/**
+ * An exception thrown from Supabase authentication operations
+ */
 class SupabaseException(override val message: String) : RuntimeException(message)

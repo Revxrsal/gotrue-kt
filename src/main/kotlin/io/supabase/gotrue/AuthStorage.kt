@@ -23,18 +23,38 @@
  */
 package io.supabase.gotrue
 
+/**
+ * Represents a basic storage for storing authentication sessions. This
+ * is equivalent to the browser's local storage.
+ */
 interface AuthStorage {
 
+    /**
+     * Sets the value of the given key
+     */
     operator fun set(key: String, value: String)
 
+    /**
+     * Returns the value of the given key
+     */
     operator fun get(key: String): String?
 
+    /**
+     * Removes the given key
+     */
     fun remove(key: String)
 
+    /**
+     * Saves to the disk
+     */
     fun save() {}
 
 }
 
+/**
+ * A basic implementation of [AuthStorage] that stores information inside
+ * memory.
+ */
 class MemoryStorage : AuthStorage {
 
     private val data = mutableMapOf<String, String>()
