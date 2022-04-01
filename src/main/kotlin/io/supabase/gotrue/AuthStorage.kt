@@ -51,6 +51,12 @@ interface AuthStorage {
 
 }
 
+object AbsentStorage : AuthStorage {
+    override fun set(key: String, value: String) {}
+    override fun get(key: String): String? = null
+    override fun remove(key: String) {}
+}
+
 /**
  * A basic implementation of [AuthStorage] that stores information inside
  * memory.
