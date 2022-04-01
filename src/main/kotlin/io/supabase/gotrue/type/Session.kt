@@ -40,5 +40,5 @@ data class Session(
     @Json(name = "expires_at") var expiresAt: Long? = null,
     @Json(name = "refresh_token") val refreshToken: String? = null,
     @Json(name = "token_type")  val tokenType: String?,
-    val user: SupabaseUser? = null
+    val user: SupabaseUser
 )

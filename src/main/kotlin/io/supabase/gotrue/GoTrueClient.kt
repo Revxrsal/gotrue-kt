@@ -249,25 +249,25 @@ class GoTrueClient(
         return session
     }
 
-    /**
-     * Overrides the JWT on the current client. The JWT will then be sent in
-     * all subsequent network requests.
-     *
-     * @param accessToken A JWT token
-     */
-    fun setAuth(accessToken: String): Session {
-        val session = Session(
-            accessToken = accessToken,
-            tokenType = "bearer",
-            user = null,
-            expiresIn = currentSession?.expiresIn,
-            expiresAt = currentSession?.expiresAt,
-            refreshToken = currentSession?.refreshToken,
-            providerToken = currentSession?.providerToken,
-        )
-        saveSession(session)
-        return session
-    }
+//    /**
+//     * Overrides the JWT on the current client. The JWT will then be sent in
+//     * all subsequent network requests.
+//     *
+//     * @param accessToken A JWT token
+//     */
+//    fun setAuth(accessToken: String): Session {
+//        val session = Session(
+//            accessToken = accessToken,
+//            tokenType = "bearer",
+//            user = null,
+//            expiresIn = currentSession?.expiresIn,
+//            expiresAt = currentSession?.expiresAt,
+//            refreshToken = currentSession?.refreshToken,
+//            providerToken = currentSession?.providerToken,
+//        )
+//        saveSession(session)
+//        return session
+//    }
 
     /**
      * Gets the session data from a URL string.
