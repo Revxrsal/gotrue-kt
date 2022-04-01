@@ -1,7 +1,7 @@
 A client implementation in Kotlin for [Netlify's GoTrue API](https://github.com/netlify/gotrue).  
   
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
-[![Build](https://github.com/Revxrsal/gotrue-kt/actions/workflows/gradle.yml/badge.svg)](https://github.com/Revxrsal/Lamp/actions/workflows/gradle.yml)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build](https://github.com/Revxrsal/gotrue-kt/actions/workflows/gradle.yml/badge.svg)](https://github.com/Revxrsal/gotrue-kt/actions/workflows/gradle.yml)
 [![](https://jitpack.io/v/Revxrsal/gotrue-kt.svg)](https://jitpack.io/#Revxrsal/gotrue-kt)  
   
 # Features
